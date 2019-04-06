@@ -120,6 +120,8 @@ Here are some of the changes we've made to storage in Windows Server 2019. For d
 
 Storage Migration Service is a new technology that makes it easier to migrate servers to a newer version of Windows Server. It provides a graphical tool that inventories data on servers, transfers the data and configuration to newer servers, and then optionally moves the identities of the old servers to the new servers so that apps and users don't have to change anything. For more info, see [Storage Migration Service](../storage/storage-migration-service/overview.md).
 
+
+
 ### Storage Spaces Direct
 
 Here's a list of what's new in Storage Spaces Direct. For details, see [What's new in Storage Spaces Direct](../storage/whats-new-in-storage.md#storage-spaces-direct).
@@ -134,6 +136,7 @@ Here's a list of what's new in Storage Spaces Direct. For details, see [What's n
 - **Mirror-accelerated parity is 2X faster**
 - **Drive latency outlier detection**
 - **Manually delimit the allocation of volumes to increase fault tolerance**
+
 
 ### Storage Replica
 
@@ -225,4 +228,21 @@ Now, with Windows Server 2019, it’s easy to deploy and manage through a new de
 ### Persistent Memory support for Hyper-V VMs
 
 To leverage the high throughput and low latency of persistent memory (a.k.a. storage class memory) in virtual machines, it can now be projected directly into VMs. This can help to drastically reduce database transaction latency or reduce recovery times for low latency in-memory databases on failure.
+
+
+### Enhanced security capabilities
+
+**Enhanced Windows Defender Advanced Threat Protection (ATP)** is a new set of host intrusion prevention capabilities such as preventative protection, attack detection, and zero-day exploits.
+
+**Shielded VMs for Linux** protects Linux VMs from attacks and compromised administrators in the underlying fabric and extensive threat resistance components.
+
+**HGS offline mode** for shielded VMs allows shielded VMs to turn on when HGS cannot be reached, if the security configuration of your Hyper-V host has not changed.
+
+**VM Connect for shielded VMs** enhances the interactive session experience by providing a secure console connection while interacting with a shielded VM for Windows and Linux machines.
+
+**Cluster hardening** new clusters running Windows Server 2019 will not require NTLM, which completely removes the requirement of Active Directory for clusters in Windows Server.
+
+**SDN encrypted subnet** virtual network encryption provides the ability for the virtual network traffic to be encrypted between VMs that communicate with each other within subnets.
+See [For more details]
+(https://www.microsoft.com/en-in/cloud-platform/windows-server-comparison)
 
